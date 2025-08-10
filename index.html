@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Transfusion Reactions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #87ceeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .poster {
+        background: #87ceeb;
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .header {
+        background: #e74c3c;
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 1px;
+      }
+
+      .definition {
+        background: #f39c12;
+        color: white;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .definition-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .content {
+        background: #f5f5dc;
+        padding: 25px;
+      }
+
+      .section-title {
+        color: #e74c3c;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .reactions-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .reaction-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 15px;
+      }
+
+      .reaction-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        flex-shrink: 0;
+        font-size: 14px;
+      }
+
+      .acute-hemolytic {
+        background: #3498db;
+      }
+      .anaphylaxis {
+        background: #e91e63;
+      }
+      .febrile {
+        background: #ff5722;
+      }
+      .trali {
+        background: #00bcd4;
+      }
+      .allergic {
+        background: #9c27b0;
+      }
+      .delayed {
+        background: #ff9800;
+      }
+
+      .reaction-content {
+        flex: 1;
+        font-size: 12px;
+        line-height: 1.3;
+      }
+
+      .reaction-title {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .reaction-subtitle {
+        font-size: 11px;
+        color: #666;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+
+      .reaction-details {
+        font-size: 11px;
+        color: #555;
+      }
+
+      .detail-line {
+        margin-bottom: 3px;
+      }
+
+      .detail-label {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .prevention-section {
+        background: #f5f5dc;
+        padding: 15px 0;
+        border-top: 2px solid #ddd;
+        margin-top: 15px;
+      }
+
+      .prevention-title {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      .prevention-text {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.3;
+      }
+
+      .emergency-rule {
+        background: #e74c3c;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 15px;
+        border-radius: 5px;
+      }
+
+      .emergency-rule-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .emergency-rule-text {
+        font-size: 13px;
+      }
+
+      .warning-icon {
+        font-size: 18px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poster">
+      <div class="header">BLOOD TRANSFUSION REACTIONS</div>
+
+      <div class="definition">
+        <div class="definition-title">Definition:</div>
+        <div>
+          Adverse effects occurring during or after transfusion of blood/blood
+          products – can be mild or life-threatening.
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section-title">Types & Key Points</div>
+
+        <div class="reactions-container">
+          <div class="left-column">
+            <div class="reaction-item">
+              <div class="reaction-icon acute-hemolytic">🩸</div>
+              <div class="reaction-content">
+                <div class="reaction-title">Acute Hemolytic Reaction</div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> ABO incompatibility
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Fever, chills,
+                    back pain
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Antipyretics,
+                    stop transfusion
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reaction-item">
+              <div class="reaction-icon febrile">🌡️</div>
+              <div class="reaction-content">
+                <div class="reaction-title">Febrile Non-Hemolytic Reaction</div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> Cytokines/WBC
+                    antibodies
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Fever, chills
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Antipyretics
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reaction-item">
+              <div class="reaction-icon allergic">H</div>
+              <div class="reaction-content">
+                <div class="reaction-title">Allergic Reaction</div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> Plasma proteins
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Urticaria,
+                    itching, flushing
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Antihistamines
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reaction-item">
+              <div class="reaction-icon trali">🫁</div>
+              <div class="reaction-content">
+                <div class="reaction-title">TRALI</div>
+                <div class="reaction-subtitle">
+                  (Transfusion-Related Acute Lung Injury)
+                </div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> Donor
+                    anti-leukocyte antibodies, hypoxemic
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-column">
+            <div class="reaction-item">
+              <div class="reaction-icon anaphylaxis">🩸</div>
+              <div class="reaction-content">
+                <div class="reaction-title">Anaphylaxis</div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> IgA deficiency with
+                    anti-IgA antibodies
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Hypotension,
+                    dyspnea, shock
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Epinephrine,
+                    airway support
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reaction-item">
+              <div class="reaction-icon trali">🫁</div>
+              <div class="reaction-content">
+                <div class="reaction-title">TRALI</div>
+                <div class="reaction-subtitle">
+                  (Transfusion-Related Acute Lung Injury)
+                </div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> Donor
+                    anti-leukocyte antibodies
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Acute
+                    respiratory distress, hypoxemia
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Oxygen,
+                    ventilatory support
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reaction-item">
+              <div class="reaction-icon delayed">⏰</div>
+              <div class="reaction-content">
+                <div class="reaction-title">Delayed Hemolytic Reaction</div>
+                <div class="reaction-details">
+                  <div class="detail-line">
+                    <span class="detail-label">Cause:</span> Minor RBC antigen
+                    mismatch
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Features:</span> Mild jaundice,
+                    falling Hb
+                  </div>
+                  <div class="detail-line">
+                    <span class="detail-label">Management:</span> Supportive
+                    care
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prevention-section">
+          <div class="prevention-title">Prevention:</div>
+          <div class="prevention-text">
+            Crossmatching, donor screening, close monitoring during transfusion.
+          </div>
+        </div>
+
+        <div class="emergency-rule">
+          <div class="emergency-rule-title">
+            <span class="warning-icon">⚠️</span>EMERGENCY RULE:
+          </div>
+          <div class="emergency-rule-text">
+            Stop transfusion immediately if any reaction is suspected!
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
